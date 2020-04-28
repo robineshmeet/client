@@ -69,7 +69,7 @@ class PostItem extends React.PureComponent {
                   <i className="text-secondary fas fa-thumbs-down"></i>
                 </button>
                 <Link to={`/post/${post._id}`} className="btn btn-info mr-1">
-                  Comments
+                  Reply
                 </Link>
                 {post.user === auth.user.id ? (
                   <button

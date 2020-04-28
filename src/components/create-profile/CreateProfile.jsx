@@ -155,7 +155,7 @@ class CreateProfile extends React.PureComponent {
               <small className="d-black pb-3">required fields</small>
               <form onSubmit={this.onSubmit}>
                 <TextFieldGroup
-                  placeholder="* Profile Handle"
+                  placeholder="* Profile Username"
                   name="handle"
                   value={handle}
                   onChange={this.onChange}
