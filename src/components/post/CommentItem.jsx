@@ -10,7 +10,6 @@ class CommentItem extends React.PureComponent {
 
   render() {
     const { comment, postId, auth } = this.props;
-    console.log(comment);
 
     return (
       <div className="card card-body mb-3">
@@ -19,8 +18,8 @@ class CommentItem extends React.PureComponent {
             <a href="profile.html">
               <img
                 className="rounded-circle d-none d-md-block"
-                // src={comment.avatar}
-                src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
+                src={comment.avatar}
+                // src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
                 alt=""
               />
             </a>
@@ -29,7 +28,7 @@ class CommentItem extends React.PureComponent {
           </div>
           <div className="col-md-10">
             <p className="lead">{comment.text}</p>
-            {console.log(comment.user)}
+
             {comment.user === auth.user.id ? (
               <button
                 onClick={this.onDeleteClick.bind(this, postId, comment._id)}

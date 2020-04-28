@@ -37,8 +37,8 @@ class PostItem extends React.PureComponent {
             <a href="profile.html">
               <img
                 className="rounded-circle d-none d-md-block"
-                // src={post.avatar}
-                src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
+                src={post.avatar}
+                // src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
                 alt=""
               />
             </a>

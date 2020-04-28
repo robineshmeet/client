@@ -37,13 +37,12 @@ class Navbar extends React.PureComponent {
           >
             <img
               className="rounded-circle"
-              // src={user.avatar}
-              src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
+              src={user.avatar}
+              // src="https://pngimage.net/wp-content/uploads/2018/05/avatar-vector-png-3.png"
               alt={user.name}
               style={{ width: '25px', marginRight: '5px' }}
               title="You must have a gravtar connected to your email to display and image"
             />
-            {console.log('avatar', user.avatar)}
             LogOut
           </a>
         </li>
